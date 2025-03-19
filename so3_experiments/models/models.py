@@ -81,7 +81,7 @@ class PMLP(torch.nn.Module):
 
     def forward(self, input):
         v = self.net(input)
-        x = rearrange(input[:, :-1], "b (c d) -> b c d", c=3, d=3)
+        x = rearrange(input[:, :9], "b (c d) -> b c d", c=3, d=3)
         v = rearrange(v, "b (c d) -> b c d", c=3, d=3)
         Pv = self.tangent_space_proj(x, v)  # Pvt is on the tangent space of xt
         return rearrange(Pv, "b c d -> b (c d)", c=3, d=3)

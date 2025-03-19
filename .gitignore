@@ -195,6 +195,8 @@ wandb/
 results/
 
 
+geomstats/
+
 # keep track of the results example
 !results_example/
 !results_example/length_50/*
@@ -202,3 +204,5 @@ results/
 !results_example/length_50/sample_0/self_consistency/*
 !results_example/length_50/sample_0/self_consistency/esmf/*
 !results_example/length_50/sample_0/self_consistency/seqs/*
+
+

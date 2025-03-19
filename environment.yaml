@@ -1,4 +1,4 @@
-name: foldflow-env
+name: foldflow
 channels:
   - pytorch
   - nvidia
@@ -20,7 +20,7 @@ dependencies:
       - dm-tree
       - einops
       - fair-esm
-      - git+https://github.com/joeybose/geomstats.git
+      # - git+https://github.com/joeybose/geomstats.git
       - gputil
       - hydra-core
       - hydra-joblib-launcher
